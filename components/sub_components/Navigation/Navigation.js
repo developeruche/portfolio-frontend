@@ -60,7 +60,9 @@ function Navigation({isHome=true}) {
                 setCurrentTheme(localStorage.getItem("du__theme"))
                 document.body.classList[currentTheme === 'dark' ? 'add' : 'remove']("dark-theme")
             } else {
+                localStorage.setItem("du__theme", "dark")   
                 setCurrentTheme("dark")
+                document.body.classList[currentTheme === 'dark' ? 'add' : 'remove']("dark-theme")
                 console.log("it happened here")
             }
         } catch (error) {
