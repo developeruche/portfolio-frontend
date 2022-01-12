@@ -36,7 +36,7 @@ function Navigation({isHome=true}) {
 
 
     // Implementing Dark and light theme
-    const [currentTheme, setCurrentTheme] = useState("light")
+    const [currentTheme, setCurrentTheme] = useState("dark")
 
 
     const goToggleTheme = () => {
@@ -60,7 +60,7 @@ function Navigation({isHome=true}) {
                 setCurrentTheme(localStorage.getItem("du__theme"))
                 document.body.classList[currentTheme === 'dark' ? 'add' : 'remove']("dark-theme")
             } else {
-                setCurrentTheme("light")
+                setCurrentTheme("dark")
                 console.log("it happened here")
             }
         } catch (error) {
