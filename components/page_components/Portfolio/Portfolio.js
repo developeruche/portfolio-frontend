@@ -40,7 +40,7 @@ function Portfolio() {
                                     <SwiperSlide key={project.id}>
                                         <div className="portfolio__content grid swiper-slide">
                                                 {/* <img src={project.image.file_upload} alt="Portfolio One" className="portfolio__img" /> */}
-                                                <Broswer image={project.image} />
+                                                <Broswer image={project.main_image} />
             
                                                 <div className="portfolio__data">
                                                     <h3 className="portfolio__title">{project.title}</h3>
