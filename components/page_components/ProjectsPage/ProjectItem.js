@@ -8,7 +8,7 @@ function ProjectItem({data}){
         <div className="projectItem grid">
             <div className="projectItem__sectionOne">
                 <Manager 
-                    video_url={data.video.video_upload}
+                    video_url={data.video}
                     project_title={data.title}
                     explore_url={data.demo_url}
                 />
@@ -42,7 +42,7 @@ function ProjectItem({data}){
                     </div>
                 </div>
                 <div className="projectItem__imageContainer">
-                    <img src={data.main_image.file_upload}/> 
+                    <img src={data.main_image}/> 
                 </div>
             </div>
         </div>

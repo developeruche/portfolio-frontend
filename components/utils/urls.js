@@ -1,4 +1,4 @@
-const BASE_URL = "https://portfolio--backend--devuc.herokuapp.com"
+const BASE_URL = "https://developeruche.herokuapp.com"
 
 const OTHERS = {
     portfolio: `${BASE_URL}/api/projects`,
