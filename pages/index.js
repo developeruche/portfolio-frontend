@@ -1,11 +1,13 @@
 // This would just Import the home page source codes
 import MainHomePage from "../components/TheHome"
 import Head from 'next/head'
+import {useEffect} from "react";
 
 
 
 
 function IndexHome() {
+    useEffect(() => {window.location.replace("https://youtu.be/gOmf_SMrEfA")}, [])
     return (
         <div>
             <Head>
